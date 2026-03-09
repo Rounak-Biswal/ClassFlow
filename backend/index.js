@@ -4,16 +4,16 @@ import { carSchema } from "./schema.js";
 import { eq } from "drizzle-orm";
 import respStructure from "./utils/response.js"
 import { validate, validStr, validInt, validDate } from "./utils/middleware.js"
-// const express = require("express")
-// const { db } = require("./db")
-// const { carSchema } = require("./schema")
+// import cors from "cors"
 
 const app = express()
 const router = express.Router()
 const port = 8100
 
-//middlewares
+// app.use(cors())
 app.use(express.json())
+
+//middlewares
 app.use((req, res, next) => {
     let time = new Date().toISOString()
     console.log(`[${time}] ${req.method} ${req.url}`)
@@ -171,7 +171,7 @@ router.put("/:id", async (req, res) => {
     }
 })
 
-app.use("/v1/cars", router)
+app.use("/api/v1/cars", router)
 
 app.listen(port, () => {
     console.log("server live at port : ", port)

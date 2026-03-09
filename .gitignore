@@ -1,0 +1,10 @@
+backend/node_modules/
+
+backend/.env
+backend/.env.*
+
+frontend/package.json
+frontend/package-lock.json
+
+dist/
+build/
