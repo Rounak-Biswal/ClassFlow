@@ -1,0 +1,23 @@
+# React / Frontend
+
+classFlow/frontend/node_modules/
+classFlow/frontend/build/
+classFlow/frontend/.env*
+classFlow/frontend/.cache/
+
+# Refine Frontend
+
+classFlow/refine-frontend/node_modules/
+classFlow/refine-frontend/build/
+classFlow/refine-frontend/.env*
+classFlow/refine-frontend/.cache/
+
+# Backend (Express)
+
+classFlow/backend/node_modules/
+classFlow/backend/dist/
+classFlow/backend/build/
+classFlow/backend/.env*
+classFlow/backend/uploads/
+classFlow/backend/logs/
+
